@@ -44,7 +44,7 @@ void TryAnIf()
     Console.WriteLine("this line runs no matter what");
 }
 
-void tryAnElseIf()
+void TryAnElseIf()
 {
     int x = 5;
     if (x == 10)
@@ -57,7 +57,7 @@ void tryAnElseIf()
     }
 }
 
-void trySomeLoops()
+void TrySomeLoops()
 {
     int count = 0;
 
