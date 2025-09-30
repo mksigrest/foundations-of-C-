@@ -1,6 +1,9 @@
 ﻿using System.Formats.Asn1;
 
 OperatorExamples();
+TryAnIf();
+TrySomeLoops();
+TryAnElseIf();
 
 void OperatorExamples() {
     int width = 3;
@@ -28,4 +31,45 @@ void OperatorExamples() {
         width--;
         area = width * height;
     } while (area > 25);
+}
+
+void TryAnIf()
+{
+    int someValue = 4;
+    string name = "Bobbo Jr.";
+    if ((someValue == 3) && (name == "Joe"))
+    {
+        Console.WriteLine("x is 3 and the name is Joe");
+    }
+    Console.WriteLine("this line runs no matter what");
+}
+
+void tryAnElseIf()
+{
+    int x = 5;
+    if (x == 10)
+    {
+        Console.WriteLine("x must be 10");
+    }
+    else
+    {
+        Console.WriteLine("x isn't 10");
+    }
+}
+
+void trySomeLoops()
+{
+    int count = 0;
+
+    while (count < 10)
+    {
+        count += 1;
+    }
+
+    for (int i = 0; i < 5; i++)
+    {
+        count -= 1;
+    }
+
+    Console.WriteLine("The answer is " + count);
 }
